@@ -65,7 +65,6 @@ func (a *Alerts) ListInfrastructureConditionsWithContext(ctx context.Context, po
 	if err != nil {
 		return nil, err
 	}
-
 	return resp.Conditions, nil
 }
 
