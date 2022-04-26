@@ -33,12 +33,16 @@ type InfrastructureCondition struct {
 
 type InfrastructureConditionFilter struct {
 	And []struct {
-		In map[string]string `json:"in,omitempty"`
-		Is map[string]string `json:"is,omitempty"`
+		In    map[string][]string `json:"in,omitempty"`
+		Is    map[string]string   `json:"is,omitempty"`
+		IsNot map[string]string   `json:"is_not,omitempty"`
+		Like  map[string]string   `json:"like,omitempty"`
 	} `json:"and,omitempty"`
 	Or []struct {
-		In map[string]string `json:"in,omitempty"`
-		Is map[string]string `json:"is,omitempty"`
+		In    map[string][]string `json:"in,omitempty"`
+		Is    map[string]string   `json:"is,omitempty"`
+		IsNot map[string]string   `json:"is_not,omitempty"`
+		Like  map[string]string   `json:"like,omitempty"`
 	} `json:"or,omitempty"`
 }
 
