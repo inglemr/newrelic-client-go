@@ -1,3 +1,43 @@
+<a name="v0.75.0"></a>
+## [v0.75.0] - 2022-04-13
+### Features
+- **errors:** handle 402 payment required HTTP response scenario
+
+<a name="v0.74.2"></a>
+## [v0.74.2] - 2022-03-23
+### Bug Fixes
+- use correct input type for cloud disable integrations mutation
+
+<a name="v0.74.1"></a>
+## [v0.74.1] - 2022-03-04
+### Bug Fixes
+- remove integrations from getLinkedAccounts query
+
+<a name="v0.74.0"></a>
+## [v0.74.0] - 2022-03-03
+### Features
+- **auth:** Add X-Account-ID header if value exists in request context
+
+<a name="v0.73.0"></a>
+## [v0.73.0] - 2022-02-09
+### Features
+- **entities:** add new entity types
+
+<a name="v0.72.0"></a>
+## [v0.72.0] - 2022-02-01
+### Features
+- **nrql_conditions:** add optional SlideBy field to signal
+
+<a name="v0.71.0"></a>
+## [v0.71.0] - 2022-01-25
+### Features
+- **cloud:** add query to get a single linked account
+
+<a name="v0.70.0"></a>
+## [v0.70.0] - 2022-01-19
+### Features
+- **installevents:** add recipe event metadata field, update mutation via tutone
+
 <a name="v0.69.0"></a>
 ## [v0.69.0] - 2021-12-28
 ### Features
@@ -1226,7 +1266,15 @@
 - extract paging implementation
 - rename packages for clarity, promote Config to the public package
 
-[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v0.69.0...HEAD
+[Unreleased]: https://github.com/newrelic/newrelic-client-go/compare/v0.75.0...HEAD
+[v0.75.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.2...v0.75.0
+[v0.74.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.1...v0.74.2
+[v0.74.1]: https://github.com/newrelic/newrelic-client-go/compare/v0.74.0...v0.74.1
+[v0.74.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.73.0...v0.74.0
+[v0.73.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.72.0...v0.73.0
+[v0.72.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.71.0...v0.72.0
+[v0.71.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.70.0...v0.71.0
+[v0.70.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.69.0...v0.70.0
 [v0.69.0]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.3...v0.69.0
 [v0.68.3]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.2...v0.68.3
 [v0.68.2]: https://github.com/newrelic/newrelic-client-go/compare/v0.68.1...v0.68.2
