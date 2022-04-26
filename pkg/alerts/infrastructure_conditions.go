@@ -32,18 +32,15 @@ type InfrastructureCondition struct {
 }
 
 type InfrastructureConditionFilter struct {
-	And []struct {
-		In    map[string][]string `json:"in,omitempty"`
-		Is    map[string]string   `json:"is,omitempty"`
-		IsNot map[string]string   `json:"is_not,omitempty"`
-		Like  map[string]string   `json:"like,omitempty"`
-	} `json:"and,omitempty"`
-	Or []struct {
-		In    map[string][]string `json:"in,omitempty"`
-		Is    map[string]string   `json:"is,omitempty"`
-		IsNot map[string]string   `json:"is_not,omitempty"`
-		Like  map[string]string   `json:"like,omitempty"`
-	} `json:"or,omitempty"`
+	And []InfrastructureConditionFilterTypes `json:"and,omitempty"`
+	Or  []InfrastructureConditionFilterTypes `json:"or,omitempty"`
+}
+
+type InfrastructureConditionFilterTypes struct {
+	In    map[string][]string `json:"in,omitempty"`
+	Is    map[string]string   `json:"is,omitempty"`
+	IsNot map[string]string   `json:"is_not,omitempty"`
+	Like  map[string]string   `json:"like,omitempty"`
 }
 
 // InfrastructureConditionThreshold represents an New Relic Infrastructure alert condition threshold.
